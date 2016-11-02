@@ -70,7 +70,7 @@ export default class Server {
 
   async render (req, res) {
     const { dir, dev } = this
-    const ctx = { req, res }
+    const ctx = { req, res, route: req.url }
     const opts = { dir, dev }
 
     let html
